@@ -1,42 +1,28 @@
-```javascript
-/*
-=========================================================
-        JAVASCRIPT COMPLETE REVISION FILE
-            By: Rumi Parvez
-=========================================================
+// ======================================================
+// JavaScript Complete Revision
+// Author: Rumi Parvez
+// ======================================================
 
-Topics:
-1. Variables
-2. Data Types
-3. typeof
-4. Operators
-5. if / else
-6. Ternary Operator
-7. Loops
-8. String Methods
-9. Arrays
-10. Objects
-11. Functions
-12. Scientific Numbers
-13. Mini Practice
-=========================================================
-*/
+// ==========================
+// 1. Variables
+// ==========================
 
-console.log("========== 1. VARIABLES ==========");
+console.log("\n========== VARIABLES ==========");
 
-let name = "Rumi";
+let userName = "Rumi";
 const country = "Bangladesh";
 
-console.log(name);
+console.log(userName);
 console.log(country);
 
-name = "Parvez";
+userName = "Parvez";
+console.log(userName);
 
-console.log(name);
+// ==========================
+// 2. Data Types
+// ==========================
 
-
-
-console.log("\n========== 2. DATA TYPES ==========");
+console.log("\n========== DATA TYPES ==========");
 
 let fullName = "Rumi";
 let age = 17;
@@ -50,9 +36,11 @@ console.log(isStudent);
 console.log(money);
 console.log(city);
 
+// ==========================
+// 3. typeof
+// ==========================
 
-
-console.log("\n========== 3. TYPEOF ==========");
+console.log("\n========== TYPEOF ==========");
 
 console.log(typeof fullName);
 console.log(typeof age);
@@ -60,9 +48,11 @@ console.log(typeof isStudent);
 console.log(typeof money);
 console.log(typeof city);
 
+// ==========================
+// 4. Arithmetic Operators
+// ==========================
 
-
-console.log("\n========== 4. ARITHMETIC OPERATORS ==========");
+console.log("\n========== ARITHMETIC ==========");
 
 console.log(10 + 5);
 console.log(10 - 5);
@@ -71,9 +61,11 @@ console.log(10 / 5);
 console.log(10 % 3);
 console.log(10 ** 2);
 
+// ==========================
+// 5. Assignment Operators
+// ==========================
 
-
-console.log("\n========== 5. ASSIGNMENT OPERATORS ==========");
+console.log("\n========== ASSIGNMENT ==========");
 
 let x = 10;
 
@@ -89,9 +81,11 @@ console.log(x);
 x /= 4;
 console.log(x);
 
+// ==========================
+// 6. Comparison Operators
+// ==========================
 
-
-console.log("\n========== 6. COMPARISON OPERATORS ==========");
+console.log("\n========== COMPARISON ==========");
 
 console.log(10 > 5);
 console.log(10 < 5);
@@ -104,9 +98,11 @@ console.log(10 === "10");
 console.log(10 != 5);
 console.log(10 !== "10");
 
+// ==========================
+// 7. Logical Operators
+// ==========================
 
-
-console.log("\n========== 7. LOGICAL OPERATORS ==========");
+console.log("\n========== LOGICAL ==========");
 
 let studentAge = 20;
 let student = true;
@@ -115,9 +111,11 @@ console.log(studentAge >= 18 && student);
 console.log(studentAge >= 18 || false);
 console.log(!student);
 
+// ==========================
+// 8. if else
+// ==========================
 
-
-console.log("\n========== 8. IF ELSE ==========");
+console.log("\n========== IF ELSE ==========");
 
 let personAge = 17;
 
@@ -127,97 +125,105 @@ if (personAge >= 18) {
     console.log("Child");
 }
 
+// ==========================
+// 9. else if
+// ==========================
 
-
-console.log("\n========== 9. ELSE IF ==========");
+console.log("\n========== ELSE IF ==========");
 
 let marks = 82;
 
 if (marks >= 80) {
     console.log("A+");
-}
-else if (marks >= 70) {
+} else if (marks >= 70) {
     console.log("A");
-}
-else if (marks >= 60) {
+} else if (marks >= 60) {
     console.log("A-");
-}
-else {
+} else {
     console.log("Fail");
 }
 
+// ==========================
+// 10. Ternary
+// ==========================
 
-
-console.log("\n========== 10. TERNARY ==========");
+console.log("\n========== TERNARY ==========");
 
 let voteAge = 20;
 
-voteAge >= 18
-    ? console.log("Can Vote")
-    : console.log("Cannot Vote");
+console.log(voteAge >= 18 ? "Can Vote" : "Cannot Vote");
 
+// ==========================
+// 11. For Loop
+// ==========================
 
-
-console.log("\n========== 11. FOR LOOP ==========");
+console.log("\n========== FOR LOOP ==========");
 
 for (let i = 1; i <= 5; i++) {
     console.log(i);
 }
 
+// ==========================
+// 12. While Loop
+// ==========================
 
+console.log("\n========== WHILE LOOP ==========");
 
-console.log("\n========== 12. WHILE LOOP ==========");
+let count = 1;
 
-let i = 1;
-
-while (i <= 5) {
-    console.log(i);
-    i++;
+while (count <= 5) {
+    console.log(count);
+    count++;
 }
 
+// ==========================
+// 13. Do While
+// ==========================
 
+console.log("\n========== DO WHILE ==========");
 
-console.log("\n========== 13. DO WHILE ==========");
-
-let j = 1;
+let number = 1;
 
 do {
-    console.log(j);
-    j++;
-}
-while (j <= 5);
+    console.log(number);
+    number++;
+} while (number <= 5);
 
+// ==========================
+// 14. Break
+// ==========================
 
+console.log("\n========== BREAK ==========");
 
-console.log("\n========== 14. BREAK ==========");
+for (let i = 1; i <= 10; i++) {
 
-for (let k = 1; k <= 10; k++) {
-
-    if (k == 6) {
+    if (i === 6) {
         break;
     }
 
-    console.log(k);
-
+    console.log(i);
 }
 
+// ==========================
+// 15. Continue
+// ==========================
 
+console.log("\n========== CONTINUE ==========");
 
-console.log("\n========== 15. CONTINUE ==========");
+for (let i = 1; i <= 5; i++) {
 
-for (let k = 1; k <= 5; k++) {
-
-    if (k == 3) {
+    if (i === 3) {
         continue;
     }
 
-    console.log(k);
-
+    console.log(i);
 }
 
+// ==========================
+// 16. String
+// ==========================
 
-
-console.log("\n========== 16. STRING ==========");
+console.log("\n========== STRING ==========");
 
 let text = " Hello JavaScript ";
 
@@ -230,19 +236,15 @@ console.log(text.startsWith(" "));
 console.log(text.endsWith(" "));
 console.log(text.split(" "));
 
+// ==========================
+// 17. Array
+// ==========================
 
+console.log("\n========== ARRAY ==========");
 
-console.log("\n========== 17. ARRAY ==========");
-
-let fruits = [
-    "Apple",
-    "Banana",
-    "Orange"
-];
+let fruits = ["Apple", "Banana", "Orange"];
 
 console.log(fruits);
-
-console.log(fruits[0]);
 
 fruits.push("Mango");
 console.log(fruits);
@@ -256,38 +258,35 @@ console.log(fruits);
 fruits.shift();
 console.log(fruits);
 
-console.log(fruits.includes("Apple"));
-
-console.log(fruits.indexOf("Banana"));
-
+console.log(fruits[0]);
 console.log(fruits.length);
-
-console.log(fruits.join("-"));
-
+console.log(fruits.includes("Apple"));
+console.log(fruits.indexOf("Banana"));
+console.log(fruits.join(" - "));
 console.log(fruits.slice(1, 3));
 
-console.log([...fruits].reverse());
+let reversed = [...fruits].reverse();
+console.log(reversed);
 
-console.log([...fruits].sort());
+let sorted = [...fruits].sort();
+console.log(sorted);
 
-
-
-console.log("\nLoop Through Array");
+console.log("\nFor Of");
 
 for (let fruit of fruits) {
     console.log(fruit);
 }
 
+// ==========================
+// 18. Object
+// ==========================
 
-
-console.log("\n========== 18. OBJECT ==========");
+console.log("\n========== OBJECT ==========");
 
 const person = {
-
     name: "Rumi",
     age: 17,
     country: "Bangladesh"
-
 };
 
 console.log(person);
@@ -303,90 +302,88 @@ delete person.country;
 
 console.log(person);
 
+console.log(Object.keys(person));
 console.log(Object.values(person));
-
 console.log(Object.entries(person));
 
 console.log("\nFor In");
 
 for (let key in person) {
-
-    console.log(key);
-
+    console.log(key, ":", person[key]);
 }
 
-console.log("\nKeys & Values");
+console.log("\nFor Of");
 
 for (let [key, value] of Object.entries(person)) {
-
     console.log(key, value);
-
 }
 
+// ==========================
+// 19. Function
+// ==========================
 
-
-console.log("\n========== 19. FUNCTION ==========");
+console.log("\n========== FUNCTION ==========");
 
 function greet() {
-
     console.log("Hello Rumi");
-
 }
 
 greet();
 
+// ==========================
+// 20. Parameter
+// ==========================
 
+console.log("\n========== PARAMETER ==========");
 
-console.log("\n========== 20. FUNCTION PARAMETER ==========");
-
-function welcome(userName) {
-
-    console.log("Welcome", userName);
-
+function welcome(name) {
+    console.log("Welcome", name);
 }
 
 welcome("Rumi");
 
+// ==========================
+// 21. Return
+// ==========================
 
-
-console.log("\n========== 21. RETURN ==========");
+console.log("\n========== RETURN ==========");
 
 function add(a, b) {
-
     return a + b;
-
 }
 
 console.log(add(10, 20));
 
+// ==========================
+// 22. Function + Array
+// ==========================
 
+console.log("\n========== FUNCTION + ARRAY ==========");
 
-console.log("\n========== 22. FUNCTION + ARRAY ==========");
-
-function showFruits(array) {
-
-    console.log(array);
-
+function showFruits(arr) {
+    console.log(arr);
 }
 
 showFruits(fruits);
 
+// ==========================
+// 23. Function + Object
+// ==========================
 
-
-console.log("\n========== 23. FUNCTION + OBJECT ==========");
+console.log("\n========== FUNCTION + OBJECT ==========");
 
 function showPerson(user) {
-
     console.log(user.name);
     console.log(user.age);
-
 }
 
 showPerson(person);
 
+// ==========================
+// 24. Scientific Number
+// ==========================
 
-
-console.log("\n========== 24. SCIENTIFIC NUMBER ==========");
+console.log("\n========== SCIENTIFIC NUMBER ==========");
 
 console.log(1e3);
 console.log(1e6);
@@ -394,63 +391,55 @@ console.log(1e9);
 console.log(1e12);
 console.log(1e24);
 
+// ==========================
+// 25. Mini Practice
+// ==========================
 
-
-console.log("\n========== 25. MINI PRACTICE ==========");
+console.log("\n========== MINI PRACTICE ==========");
 
 let numbers = [10, 20, 30, 40, 50];
 
 let sum = 0;
 
-for (let number of numbers) {
-
-    sum += number;
-
+for (let value of numbers) {
+    sum += value;
 }
 
 console.log("Total =", sum);
 
+// ==========================
+// 26. Mini Object Project
+// ==========================
 
-
-console.log("\n========== 26. MINI OBJECT PROJECT ==========");
+console.log("\n========== MINI OBJECT PROJECT ==========");
 
 const mobile = {
-
     brand: "Samsung",
     model: "S24",
     price: 1000,
     color: "Black"
-
 };
 
 console.log(mobile);
 
 if (mobile.price >= 1000) {
-
     console.log("Premium Phone");
-
-}
-else {
-
+} else {
     console.log("Budget Phone");
-
 }
 
+// ==========================
+// 27. Function Project
+// ==========================
 
-
-console.log("\n========== 27. FUNCTION PROJECT ==========");
+console.log("\n========== FUNCTION PROJECT ==========");
 
 function calculateArea(length, width) {
-
     return length * width;
-
 }
 
 let area = calculateArea(20, 10);
 
-console.log(area);
+console.log("Area =", area);
 
-
-
-console.log("\n========== END OF JAVASCRIPT REVISION ==========");
-```
+console.log("\n========== END OF REVISION ==========");
